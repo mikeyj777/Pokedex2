@@ -18,7 +18,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     var mPlayer:AVAudioPlayer!
     
-    var playMusic = false
+    var playMusic = true
     
     var inSearchMode = false
     
