@@ -32,6 +32,17 @@ class PokemonDetailVC: UIViewController {
         let img = UIImage(named: "\(pokemon.pokedexId)")
         mainImg.image = img
         currentEvoImg.image = img
+        
+        descriptionLbl.text = ""
+        typeLbl.text = ""
+        defenseLbl.text = ""
+        heightLbl.text = ""
+        idLbl.text = ""
+        weightLbl.text = ""
+        baseAttackLbl.text = ""
+        evoLbl.text = ""
+        nextEvoImg.hidden = true
+        
         pokemon.downloadPokemonDetails { () -> () in
             //called when download is done
             
